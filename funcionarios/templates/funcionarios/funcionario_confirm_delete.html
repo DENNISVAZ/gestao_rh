@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block main %}
+Edit
+    <form method="post">
+        {% csrf_token %}
+        <h1>Excluir {{ funcionario }}</h1>
+        {{ form }}
+        <button type="submit">Excluir</button>
+    </form>
+{% endblock %}
